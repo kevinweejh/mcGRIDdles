@@ -34,11 +34,19 @@
 
 #main {
     display: grid;
-    grid-template: 1fr 1fr / 5fr 2fr;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    gap: 20px;
 }
 
 #projects {
     grid-area: 1 / 1 / 3 / 2;
+}
+
+#collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+
 }
 
 #announcements {
@@ -51,14 +59,18 @@
 
 /* SVG Icons */
 .svg-icon {
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
     fill: #4691f6;
+}
+
+#sidebar .svg-icon path {
+    fill: #ffffff;
 }
 
 .svg-icon circle {
