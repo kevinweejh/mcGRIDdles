@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- <link href="src/styles.css" rel="stylesheet"> -->
+</head>
+<body class="max-h-96">
+    <div id="dashboard" class="">
+        <div id="sidebar">
+            <div id="logo">
+                <h1 class="text-3xl font-semibold">Dashboard</h1>
+            </div>
+            <div id="navbar">
+                <div>Home</div>
+                <div>Profile</div>
+                <div>Messages</div>
+                <div>History</div>
+                <div>Tasks</div>
+                <div>Communities</div>
+            </div>
+            <div id="settings">
+                <div>Settings</div>
+                <div>Support</div>
+                <div>Privacy</div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="info-segment">
+                <div id="search">
+                    <form method="post" action="httpbin.org/post">
+                        <button type="submit">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
+                            </svg>
+                        </button>
+                        <input type="text" class="rounded-3xl border">
+                    </form>
+                    <button>
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M14.38,3.467l0.232-0.633c0.086-0.226-0.031-0.477-0.264-0.559c-0.229-0.081-0.48,0.033-0.562,0.262l-0.234,0.631C10.695,2.38,7.648,3.89,6.616,6.689l-1.447,3.93l-2.664,1.227c-0.354,0.166-0.337,0.672,0.035,0.805l4.811,1.729c-0.19,1.119,0.445,2.25,1.561,2.65c1.119,0.402,2.341-0.059,2.923-1.039l4.811,1.73c0,0.002,0.002,0.002,0.002,0.002c0.23,0.082,0.484-0.033,0.568-0.262c0.049-0.129,0.029-0.266-0.041-0.377l-1.219-2.586l1.447-3.932C18.435,7.768,17.085,4.676,14.38,3.467 M9.215,16.211c-0.658-0.234-1.054-0.869-1.014-1.523l2.784,0.998C10.588,16.215,9.871,16.447,9.215,16.211 M16.573,10.27l-1.51,4.1c-0.041,0.107-0.037,0.227,0.012,0.33l0.871,1.844l-4.184-1.506l-3.734-1.342l-4.185-1.504l1.864-0.857c0.104-0.049,0.188-0.139,0.229-0.248l1.51-4.098c0.916-2.487,3.708-3.773,6.222-2.868C16.187,5.024,17.489,7.783,16.573,10.27"></path>
+						</svg>
+                    </button>
+                    <img id="profile-pic" style="border-radius:50%; height:30px;" src="../src/profile.jpg">
+                    <p>Shinomiya Kaguya</p>
+                </div>
+                <div id="greeting">
+                    <img id="profile-pic" style="border-radius:50%; height:50px;" src="../src/profile.jpg">
+                    <div>
+                        <span class="font-semibold">Hi there,</span>
+                        <br>
+                        <span class="font-bold">Shinomiya Kaguya (@kaguyasama)</span>
+                    </div>
+                    <button class="border rounded-3xl px-10 py-2 bg-blue-500 text-white hover:bg-white hover:text-gray-700">New</button>
+                    <button class="border rounded-3xl px-10 py-2 bg-blue-500 text-white hover:bg-white hover:text-gray-700">Upload</button>
+                    <button class="border rounded-3xl px-10 py-2 bg-blue-500 text-white hover:bg-white hover:text-gray-700">Share</button>
+                </div>
+            </div>
+            <div id="main">
+                <div id="projects">
+                    <h2 class="font-bold">Your Projects</h2>
+                </div>
+                <div id="announcements">
+                    <h2 class="font-bold">Announcements</h2>
+                </div>  
+                <div id="trending">
+                    <h2 class="font-bold">Trending</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
